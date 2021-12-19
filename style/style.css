@@ -3,6 +3,9 @@ purple:BDB2FF/green:CAFFBF/dark grey 464946*/
 /*font-family: 'Montserrat', sans-serif;
 font-family: 'Zen Kurenaido', sans-serif; */
 
+/* structure inspiration
+https://jblanche.fr/#portfolio */
+
 /* properties of the entire page */
 .entirePageContenant {
   font-family: "Montserrat", sans-serif;
@@ -10,38 +13,14 @@ font-family: 'Zen Kurenaido', sans-serif; */
   font-weight: bolder;
   text-align: center;
   font-size: 20px;
-  line-height: 50px;
-  margin: 10px 50px;
+  line-height: 25px;
+  margin: 10px 350px;
 }
+
+/*>>>GENERAL PROPERTIES */
 
 /* menu defined horizontally & spreads evenly*/
 li {
   display: inline;
   padding: 30px;
-}
-
-/* main menu properties */
-.topMenuSection {
-  background-color: #bdb2ff;
-  padding: 10px;
-  border-radius: 3px;
-}
-
-/* white color sections properties */
-#landingPageSection,
-.portfolioSection {
-  height: 90vh;
-}
-
-/* vertical alignment of white section  */
-.landingContenant {
-  padding: 6em;
-}
-/* purple color section properties & vertical alignment */
-#whoAmISection,
-.contactMe {
-  background-color: #a0c4ff;
-  height: 60vh;
-  border-radius: 3px;
-  padding: 6em;
 }
