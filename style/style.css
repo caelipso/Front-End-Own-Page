@@ -19,11 +19,39 @@ https://jblanche.fr/#portfolio */
 /*>>>GENERAL PROPERTIES */
 
 /* menu defined horizontally & spreads evenly*/
+.topMenuSection {
+  position: absolute;
+}
 li {
   display: inline;
-  padding: 30px;
+  padding: 10px;
 }
 .banner {
   background-color: #a0c4ff;
-  margin: -15px -5px;
-
+}
+ul {
+  position: absolute;
+  top: -40px;
+  right: -60em;
+}
+.fullName {
+  position: absolute;
+  top: -40px;
+}
+.frontEndTitle {
+  position: absolute;
+  top: 50px;
+  left: 3%;
+  font-size: medium;
+}
+.description {
+  padding: 150px 200px;
+  min-width: 500px;
+}
+.portfolioSection {
+  text-align: center;
+}
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
