@@ -1,0 +1,36 @@
+/* 
+font styles
+p = font-family: 'Chivo', sans-serif;
+h1 - h3 = font-family: 'Hind Siliguri', sans-serif;
+h2 = font-family: 'Mada', sans-serif; 
+
+color panel
+eerie black :#1C1E21
+timberwolf:#DED7CF
+middle yellow:#FFED26
+dark cornflower blue:#3D4599
+
+*/
+
+/* variables colors & fonts  */
+:root {
+  --main-color: #ffed26;
+  --secondary-color: #3d4599;
+  --light-color: #ded7cf;
+  --dark-color: #1c1e21;
+  --h1-h3-font: "Hind Siliguri", sans-serif;
+  --p-font: "Chivo", sans-serif;
+  --h2-font: "Mada", sans-serif;
+}
+.contact-section {
+  text-align: center;
+  height: 90vh;
+  background: var(--dark-color);
+  color: var(--light-color);
+  border-bottom: 5px solid var(--main-color);
+}
+.contact-section h2 {
+  padding: 10% 0;
+  font-family: var(--h2-font);
+  font-size: 2.5rem;
+}
