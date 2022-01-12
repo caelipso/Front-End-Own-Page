@@ -11,8 +11,6 @@ middle yellow:#FFED26
 dark cornflower blue:#3D4599
 
 */
-
-/* variables colors & fonts  */
 :root {
   --main-color: #ffed26;
   --secondary-color: #3d4599;
@@ -22,9 +20,65 @@ dark cornflower blue:#3D4599
   --p-font: "Chivo", sans-serif;
   --h2-font: "Mada", sans-serif;
 }
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--p-font);
+}
+
+/* >>>>>>>>>>   NAVBAR SECTION   <<<<<<<<<<  */
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--main-color);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
+}
+.nav-list {
+  display: flex;
+  margin: 1.2rem 0;
+  list-style: none;
+}
+#navbar ul li a {
+  padding-right: 1.5rem;
+  text-decoration: none;
+  color: var(--dark-color);
+}
+#navbar ul li a:hover {
+  font-weight: bold;
+}
+#navbar ul li a:active {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+/* >>>>>>>>>>   WELCOME SECTION   <<<<<<<<<<  */
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+h1 {
+  font-family: var(--h1-h3-font);
+  font-size: 5rem;
+}
+#welcome-section p {
+  font-size: 3rem;
+}
 
 
 /* >>>>>>>>>>   PROJECTS SECTION   <<<<<<<<<<  */
+
 /* global formating of section  */
 .projects-section {
   text-align: center;
@@ -64,7 +118,6 @@ dark cornflower blue:#3D4599
 .project-image {
   width: 100%;
 }
-
 /* show more formating & positioning  */
 .show-more-btn {
   background-color: var(--dark-color);
@@ -83,4 +136,49 @@ dark cornflower blue:#3D4599
 }
 .projects-section a:active {
   color: var(--main-color);
+}
+
+/* >>>>>>>>>>   CONTACTS SECTION   <<<<<<<<<<  */
+
+.contact-section {
+  text-align: center;
+  height: 90vh;
+  background: var(--dark-color);
+  color: var(--light-color);
+  border-bottom: 5px solid var(--main-color);
+}
+.contact-section h2 {
+  padding: 50px 0 10px 0;
+  font-family: var(--h2-font);
+  font-size: 2.5rem;
+}
+.contact-section p {
+  padding: 0 0 150px 0;
+  font-size: 1rem;
+  font-style: italic;
+}
+.contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-media {
+  width: 100px;
+  color: var(--light-color);
+  padding-right: 3rem;
+}
+
+
+/* >>>>>>>>>>   FOOTER SECTION   <<<<<<<<<<  */
+
+.footer-section {
+  background: var(--secondary-color);
+  color: var(--light-color);
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.fullname-footer {
+  font-style: italic;
 }
