@@ -13,6 +13,8 @@ h2 = font-family: 'Mada', sans-serif;
   --p-font: "Chivo", sans-serif;
   --h2-font: "Mada", sans-serif;
 }
+
+/* >>>>>>>>>>   WELCOME SECTION   <<<<<<<<<<  */
 #welcome-section {
   display: flex;
   flex-direction: column;
