@@ -28,8 +28,6 @@ dark cornflower blue:#3D4599
   text-align: center;
   background-color: var(--secondary-color);
   color: var(--light-color);
-  height: 100%;
-  width: 100%;
 }
 /* title formating & positioning  */
 .projects-section h2 {
@@ -43,10 +41,15 @@ dark cornflower blue:#3D4599
 /* project grid formating & positioning */
 .project-grid {
   display: grid;
-  margin: 2% 20%;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  column-gap: 4rem;
+  margin: 2% 5%;
+  grid-template-columns: 50% 50%;
+  column-gap: 3rem;
   row-gap: 3rem;
+}
+@media only screen and (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
 }
 /* project tiles grid formating & positioning */
 .project-tile {
