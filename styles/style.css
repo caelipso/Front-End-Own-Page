@@ -86,24 +86,25 @@ h1 {
   text-align: center;
   background-color: var(--secondary-color);
   color: var(--light-color);
+  height: 100vh;
 }
 /* title formating & positioning  */
 .projects-section h2 {
   font-family: var(--h2-font);
   font-size: 2.5rem;
-  display: flexbox;
+  display: flex;
   align-content: center;
   justify-content: center;
-  padding: 48px 0 2% 0;
+  padding: 3% 0 0 0;
 }
 
 /* project grid formating & positioning */
 .project-grid {
   display: grid;
-  margin: 2% 10%;
-  grid-template-columns: 40% 40%;
-  column-gap: 20%;
-  row-gap: 3rem;
+  margin: 0 20%;
+  grid-template-columns: 50% 50%;
+  column-gap: 5%;
+  row-gap: 5%;
 }
 @media only screen and (max-width: 768px) {
   .project-grid {
@@ -116,7 +117,7 @@ h1 {
   color: var(--light-color);
   box-shadow: 0 1px 5px #1c1e217e;
   text-decoration: none;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 .project-image {
   width: 100%;
@@ -129,7 +130,7 @@ h1 {
   box-shadow: 0 1px 5px #1c1e217e;
   margin: 2% 0 2% 0;
 }
-.show-more {
+/* .show-more {
   text-decoration: none;
   color: var(--light-color);
   font-weight: bold;
@@ -139,7 +140,7 @@ h1 {
 }
 .projects-section a:active {
   color: var(--main-color);
-}
+} */
 
 /* >>>>>>>>>>   CONTACTS SECTION   <<<<<<<<<<  */
 
