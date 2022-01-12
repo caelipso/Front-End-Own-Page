@@ -38,7 +38,8 @@ dark cornflower blue:#3D4599
   font-size: 1rem;
   font-style: italic;
 }
-
-.contact-links {
-  padding: 10% 0%;
+.social-media {
+  width: 10%;
+  color: var(--light-color);
+  margin: 20% 10%;
 }
