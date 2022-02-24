@@ -34,6 +34,7 @@ nav {
   left: 40%;
   margin-top: 30px;
 }
+
 nav ul li {
   display: inline;
   list-style: none;
@@ -63,9 +64,10 @@ nav ul li:hover {
   text-align: center;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(45deg, #d6edff, #ded7cf, #ffe2ab);
+  background: linear-gradient(-45deg, #d6edff, #ffe2ab);
+  background-size: 400% 400%;
   color: var(--dark-color);
-  animation: change 10s ease-in-out infinite;
+  animation: change 5s ease-in-out infinite;
 }
 @keyframes change {
   0% {
@@ -97,65 +99,39 @@ h1 {
 /* >>>>>>>>>>   PROJECTS SECTION   <<<<<<<<<<  */
 
 /* global formating & positioning  */
+.second-section-container {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(30px);
+  border-radius: 20px;
+  padding: 1% 0;
+  margin: 0 10%;
+}
 .projects-section {
-  text-align: center;
-  background-color: var();
   color: var(--light-color);
+  background: #d6edff;
+  width: 100%;
   height: 100vh;
+  padding: 5% 0;
+  text-align: center;
+}
+
+.project-grid {
+  display: grid;
+  grid: repeat(2, 60px);
 }
 /* title formating & positioning  */
 .projects-section h2 {
   font-family: var(--h2-font);
   font-size: 2.5rem;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  padding: 3% 0 0 0;
+  text-align: center;
 }
 
-/* project grid formating & positioning */
-.project-grid {
-  display: grid;
-  margin: 0 20%;
-  grid-template-columns: 50% 50%;
-  column-gap: 5%;
-  row-gap: 5%;
-}
-@media only screen and (max-width: 768px) {
-  .project-grid {
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  }
-}
 /* project tiles grid formating & positioning */
-.project-tile {
-  background: var(--dark-color);
-  color: var(--light-color);
-  box-shadow: 0 1px 5px #1c1e217e;
-  text-decoration: none;
-  padding-bottom: 5px;
+.project-grid div {
+  width: 50px;
+  height: 50px;
 }
-.project-image {
-  width: 100%;
-}
-/* show more formating & positioning  */
-.show-more-btn {
-  background-color: var(--dark-color);
-  padding: 10px;
-  border: solid var(--dark-color);
-  box-shadow: 0 1px 5px #1c1e217e;
-  margin: 2% 0 2% 0;
-}
-/* .show-more {
-  text-decoration: none;
-  color: var(--light-color);
-  font-weight: bold;
-}
-.projects-section a:hover {
-  color: rgba(222, 215, 207, 0.8);
-}
-.projects-section a:active {
-  color: var(--main-color);
-} */
 
 /* >>>>>>>>>>   CONTACTS SECTION   <<<<<<<<<<  */
 
