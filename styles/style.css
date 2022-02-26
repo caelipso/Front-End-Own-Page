@@ -112,29 +112,36 @@ h1 {
   background: #d6edff;
   width: 100%;
   height: 100vh;
-  padding: 5% 0;
+  padding: 3.5% 0;
   text-align: center;
 }
 
 .project-grid {
   display: grid;
-  grid: repeat(2, 60px);
+  margin: auto;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.project-grid a img {
+  max-width: 450px;
 }
 /* title formating & positioning  */
 .projects-section h2 {
   font-family: var(--h2-font);
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   text-align: center;
+  color: #344054;
+  margin: 0 0 1rem 0;
 }
-
-/* project tiles grid formating & positioning */
-.project-grid div {
-  width: 50px;
-  height: 50px;
+.project-tile {
+  color: #344054;
+  font-weight: bold;
+}
+.project-grid a {
+  text-decoration: none;
 }
 
 /* >>>>>>>>>>   CONTACTS SECTION   <<<<<<<<<<  */
-
 .contact-section {
   text-align: center;
   height: 85vh;
